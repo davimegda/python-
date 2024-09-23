@@ -1,0 +1,22 @@
+Faça um programa que leia 2 valores inteiros de X e Y (em qualquer ordem). 
+A seguir, calcule e mostre a soma dos números ímpares entre eles
+Por exemplo, foi digitado 2 e 9, a soma dos impares é 15, pois entre 2 e 9 tem-se os números 3+5+7 = 15.
+
+Código:
+
+print("Digite dois numeros: ")
+x = int(input())
+y = int(input())
+
+if x > y:                          -> Para verificar se os números foram digitados em ordem crescente, se não realizar a troca
+    troca = x
+    x = y
+    y = troca
+
+
+soma = 0
+for i in range(x+1, y):           -> Lógica para percorrer todos os valores e somar os impares x+1 é o inicio e vai ate y
+    if i % 2 != 0:                -> Testar se o número é impar, pois queremos apenas os impares.
+        soma = soma + i
+
+print(f"Soma dos IMPARES = {soma}")

@@ -1,0 +1,28 @@
+Fazer um programa que leia N números reais e armazene-os em um vetor. Em seguida:
+-Imprimir todos os elementos do vetor
+-Mostrar na tela a soma e médias dos elementos do vetor
+
+Código:
+
+N = int(input("Quantos numeros voce vai digitar? "))
+
+vet = [0 for x in range(N)]
+
+for i in range (0, N):
+    vet[i] = float(input("Digite um numero: "))
+
+print()                           -> Para dar espaço em branco depois de digitar os numeros
+print("VALORES = ", end="")       -> esse comando de (end="") serve para não quebrar a linha, ou seja a estrutura for abaixo vai escrever na frente do "VALORES =" e não abaixo.
+for i in range(0, N):
+    print(f"{vet[i]:.1f} ", end="")  
+
+print()
+
+soma = 0
+for i in range(0, N):
+    soma = soma + vet[i]
+
+print(f"SOMA = {soma:.2f}")
+
+media = soma / N
+print(f"MEDIA = {media:.2f}")

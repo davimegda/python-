@@ -1,0 +1,25 @@
+Fazer um programa para ler um número inteiro N (máximo = 10) e uma matriz quadrada de ordem N contendo números inteiros.
+Em seguida, mostrar a diagonal principal e a quantidade de valores negativos da matriz.
+
+Código:
+
+N = int(input("Qual a ordem da matriz? "))
+
+mat = [[0 for x in range(N)] for x in range(N)]         ->Montando a matriz com N linhas e N colunas
+
+for i in range(0, N):                                   ->Estrutura for para percorrer a matriz e armazenar os numeros
+    for j in range(0, N):
+        mat[i][j] = int(input(f"Elemento [{i},{j}]: "))
+
+print("DIAGONAL PRINCIPAL = ")
+for i in range(0, N):        ->Estrutura for para percorrer a matriz somente na diagonal, ou seja, os elementos da posição [0,0], [1,1], [2,2], sendo assim [i][i].
+    print(f"{mat[i][i]} ", end="")
+print()
+
+cont = 0
+for i in range(0, N):        ->Estrutura for para percorrer toda a matriz e verificar quais são números negativos e adicionar na contagem.
+    for j in range(0, N):
+       if mat[i][j] < 0:
+           cont = cont + 1
+
+print(f"QUANTIDADE DE NEGATIVOS = {cont}")

@@ -1,0 +1,15 @@
+Fazer um programa para ler três números inteiros. Em seguida, mostrar qual o menor dentre os três numeros
+Em caso de empate, mostrar apenas uma vez.
+
+Código:
+
+a = int(input("Primeiro valor: "))
+b = int(input("Segundo valor: "))
+c = int(input("Terceiro valor: "))
+
+if a < b and a < c:         (Aqui vai testar se "a" é o menor valor entre b e c)
+    menor = a
+elif b < c:                 (Se não, so resta b ou c se não for a, então se b < c = menor)
+    menor = b
+else:                       (Se não, c = menor)
+    menor = c

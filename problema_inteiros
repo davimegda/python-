@@ -13,3 +13,5 @@ elif b < c:                 (Se não, so resta b ou c se não for a, então se b
     menor = b
 else:                       (Se não, c = menor)
     menor = c
+
+print(f"MENOR VALOR = {menor}")

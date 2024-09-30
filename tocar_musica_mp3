@@ -1,0 +1,13 @@
+Faça um programa que abra e reproduza o áudio de um arquivo mp3.
+Primeiramente tenha o arquivo mp3 baixado, copia ele "Ctrl + C", vá até a pasta do Projeto no PyCharm, seleciona a pasta e aperta Ctrl + V. Colocando o arquivo mp3 dentro da pasta.
+Depois cria-se o arquivo .py onde será escrito o código -> "Python File" dentro da pasta contendo o arquivo mp3.
+Existe várias maneiras de tocar música pelo PyCharm, uma dela é usando a bibliotecas de game, game tem música, então é possivel através dessa ferramenta. Vejamos:
+
+Código:
+
+import pygame
+pygame.init()  -> Para iniciar o pygame
+pygame.mixer.music.load('billie.mp3') -> selecione o arquivo da pasta
+pygame.mixer.music.play()
+input() -> (para iniciar a música)
+pygame.event.wait() -> para esperar o evento acabar

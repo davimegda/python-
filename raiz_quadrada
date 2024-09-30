@@ -1,0 +1,15 @@
+Faça um programa que calcule a raiz quadrada do número digitado pelo usuário, e o resultado arredonde para cima:
+
+Código:
+
+import math
+num = int(input('Digite um numero: '))
+raiz = math.sqrt(num)
+print('A raiz de {} é igual a {}'.format(num, math.ceil(raiz)))
+
+ou:
+
+from math import sqrt, ceil
+num = int(input('Digite um numero: '))
+raiz = sqrt(num)
+print('A raiz de {} é igual a {:.2f}'.format(num, ceil(raiz)))

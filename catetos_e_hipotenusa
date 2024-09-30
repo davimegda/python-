@@ -1,0 +1,35 @@
+Faça um programa que leia o comprimento do cateto oposto e do ceteto adjacente de um triangulo retângulo.
+Calcule e mostre o comprimento da hipotenusa.
+
+Lembrando: Para calcular a raiz quadrada de um número é só elevar ele a meio (1/2)
+
+Código:
+
+co = float(input('Comprimento do cateto oporto: ')
+ca = float(input('Comprimento do cateto adjacente: ')
+hi = (co **2 + ca **2) ** (1/2)
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
+
+ou
+
+
+import math
+co = float(input('Comprimento do cateto oporto: ')
+ca = float(input('Comprimento do cateto adjacente: ')
+hi = math.hypot(co,ca)
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
+
+ou
+
+
+
+from math import hypot
+co = float(input('Comprimento do cateto oporto: ')
+ca = float(input('Comprimento do cateto adjacente: ')
+hi = hypot(co,ca)
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
+
+  

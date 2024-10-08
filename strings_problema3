@@ -1,0 +1,10 @@
+Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome “SANTO” 
+
+Código:
+
+cid = str(input('Em que cidade você nasceu? ')).strip() --> Retira os Espaços para não dar erro qnd digitar espaços antes de digitar a cidade
+print(cid[:5].upper() == 'SANTO') --> Colocar tudo em maiusculo para não dar erro caso digite minusculo/maisculo, ai sempre vai colocar td em maiusculo e verificar
+
+Sempre bom pensar que o usuário pode digitar errado, então isso é para driblar e não dar erro, se vc coloca para verificar 'Santo' em vez de 'SANTO', se a pessoa digitar 'santo', 'saNto', 'SANTO', mesmo q seja SANTO o programa 
+não vai reconhecer, ai vc colocando para converter tudo em maiusculo oque for digitado e depois verificar não da erro.
+

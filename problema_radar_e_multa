@@ -1,0 +1,14 @@
+Escreva um problema que leia a velocidade de um carro.
+Se ele ultrapassar 80km/h, mostre uma mensagem digizendo que ele foi multado.
+A multa vai custar R$7,00 por cada km acima do limite.
+
+Código:
+
+radar = float(input('Em qual velocidade (km/h) o carro percorria? '))
+multa = (radar-80) * 7
+if radar > 80:
+  print('O carro estava percorrendo além do limite permitido de 80km/h. Multada aplicada de {} reais'.format(multa))
+else:
+  print('O carro estava percorrendo dentro do limite estabelecido de 80km/h. Não será aplicado nenhuma multa ')
+
+
